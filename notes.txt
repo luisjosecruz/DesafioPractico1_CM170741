@@ -1,32 +1,30 @@
-
-SELECT
-cliente.codigo_cliente,
-CONCAT(cliente.nombres, '', cliente.apellidos) NombreCliente, 
-cliente.idtipocliente,
-tipo_clientes.nombre_tipo,
-facturacion.idfacturacion, 
-facturacion.idcliente, 
-facturacion.monto_facturacion,
-DB_NAME() country
-FROM facturacion
-INNER JOIN cliente ON facturacion.idcliente = cliente.idcliente 
-INNER JOIN tipo_clientes ON cliente.idtipocliente = tipo_clientes.idtipocliente
-
-
-Letras y Simbolos
-_
-'
-p
-P = ALT + 80
-=
-?
-(ü, é, á, í, ó, ú, ñ, Ñ, ¿, ¡)
-
-
 INSTANCIA SQL: 
-LAPTOP-FJ1855I0\SQL2022DW
+    LAPTOP-FJ1855I0\SQL2022DW
 
+CONSULTA SQL:
 
-[country] == "db_roaming_costarica" ? "Costa Rica" : [country] == "db_roaming_guatemala" ? "Guatemala" : [country] == "db_roaming_honduras" ? "Honduras" : "***"
+    SELECT
+    cliente.codigo_cliente,
+    CONCAT(cliente.nombres, '', cliente.apellidos) NombreCliente, 
+    cliente.idtipocliente,
+    tipo_clientes.nombre_tipo,
+    facturacion.idfacturacion, 
+    facturacion.idcliente, 
+    facturacion.monto_facturacion,
+    DB_NAME() country
+    FROM facturacion
+    INNER JOIN cliente ON facturacion.idcliente = cliente.idcliente 
+    INNER JOIN tipo_clientes ON cliente.idtipocliente = tipo_clientes.idtipocliente
+
+VALIDACIONES:
+
+    country
+    [country] == "db_roaming_costarica" ? "Costa Rica" : [country] == "db_roaming_guatemala" ? "Guatemala" : [country] == "db_roaming_honduras" ? "Honduras" : "***"
+
+    monto_facturacion 
+    (DT_NUMERIC,18,2) [monto_facturacion]
+
+    tipo_cliente
+    TRIM([nombre tipo])
 
 
