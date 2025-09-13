@@ -11,10 +11,84 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{B9251DFD-7763-4AAA-91BB-BB5B345B96DE}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{2F91873A-6755-4715-862A-796C20C176BD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{243B8226-B348-4786-9068-619B643DC093}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Luis Mart\Downloads\Datawarehouse y Minería de Datos DMD941 G01T\DesafioPractico1_CM170741\ConsolidadoFacturacionPais.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8F673724-CEEC-400D-893B-4C75124577EA}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Luis Mart\Downloads\Datawarehouse y Minería de Datos DMD941 G01T\DesafioPractico1_CM170741\ConsolidadoFacturacionPais.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3C37D6F7-658C-437D-B514-25FFCA961524}"
+      DTS:ObjectName="Administrador de conexiones con Excel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Luis Mart\Downloads\Datawarehouse y Minería de Datos DMD941 G01T\DesafioPractico1_CM170741\ConsolidadoFacturacionTipoCliente.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_costarica1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F9D48298-999F-4007-9ABD-F88F6BB0FAB7}"
+      DTS:ObjectName="LAPTOP-FJ1855I0\SQL2022DW.db_roaming_costarica1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-FJ1855I0\SQL2022DW;Initial Catalog=db_roaming_costarica;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F9D48298-999F-4007-9ABD-F88F6BB0FAB7}LAPTOP-FJ1855I0\SQL2022DW.db_roaming_costarica1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_guatemala1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{16997651-1EE0-42E3-9FE6-31B61A11DF3A}"
+      DTS:ObjectName="LAPTOP-FJ1855I0\SQL2022DW.db_roaming_guatemala1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-FJ1855I0\SQL2022DW;Initial Catalog=db_roaming_guatemala;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{16997651-1EE0-42E3-9FE6-31B61A11DF3A}LAPTOP-FJ1855I0\SQL2022DW.db_roaming_guatemala1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_honduras1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{92DDA918-1E42-41B9-8F20-C524EBE1A7C0}"
+      DTS:ObjectName="LAPTOP-FJ1855I0\SQL2022DW.db_roaming_honduras1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-FJ1855I0\SQL2022DW;Initial Catalog=db_roaming_honduras;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{92DDA918-1E42-41B9-8F20-C524EBE1A7C0}LAPTOP-FJ1855I0\SQL2022DW.db_roaming_honduras1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -31,6 +105,326 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\Data Flow Task\Consolidado 1"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Consolidado 1"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Consolidado 1.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Inputs[Aggregate Input 1].Columns[Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Pais"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Pais]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Inputs[Aggregate Input 1].Columns[idfacturacion]"
+                      cachedDataType="i4"
+                      cachedName="idfacturacion"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Inputs[Aggregate Input 1].Columns[MontoFacturacion]"
+                      cachedDataType="numeric"
+                      cachedName="MontoFacturacion"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[Pais]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[Pais]"
+                      name="Pais">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Pais]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[TotalVentas]"
+                      dataType="ui8"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[TotalVentas]"
+                      name="TotalVentas">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[MontoFacturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[MontoFacturacion]"
+                      name="MontoFacturacion"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Consolidado 2"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Consolidado 2"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Consolidado 2.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Inputs[Aggregate Input 1].Columns[TipoCliente]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="TipoCliente"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[TipoCliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Inputs[Aggregate Input 1].Columns[idfacturacion]"
+                      cachedDataType="i4"
+                      cachedName="idfacturacion"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Inputs[Aggregate Input 1].Columns[MontoFacturacion]"
+                      cachedDataType="numeric"
+                      cachedName="MontoFacturacion"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TipoCliente]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TipoCliente]"
+                      name="TipoCliente">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[TipoCliente]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TotalVentas]"
+                      dataType="ui8"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TotalVentas]"
+                      name="TotalVentas">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[MontoFacturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[MontoFacturacion]"
+                      name="MontoFacturacion"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Data Flow Task\db_costarica"
               componentClassID="Microsoft.OLEDBSource"
@@ -56,7 +450,18 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    cliente.codigo_cliente,
+    CONCAT(cliente.nombres, '', cliente.apellidos) NombreCliente, 
+    cliente.idtipocliente,
+    tipo_clientes.nombre_tipo,
+    facturacion.idfacturacion, 
+    facturacion.idcliente, 
+    facturacion.monto_facturacion,
+    DB_NAME() country
+FROM facturacion
+INNER JOIN cliente ON facturacion.idcliente = cliente.idcliente 
+INNER JOIN tipo_clientes ON cliente.idtipocliente = tipo_clientes.idtipocliente</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -73,7 +478,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">2</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -82,6 +487,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\db_costarica.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_costarica1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_costarica1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -89,14 +496,188 @@
                 <output
                   refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      name="codigo_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      name="NombreCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      name="idtipocliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      name="nombre_tipo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      name="idfacturacion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      name="idcliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      name="NombreCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      dataType="i4"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="nombre_tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      dataType="i4"
+                      name="idfacturacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      dataType="i4"
+                      name="idcliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      dataType="numeric"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="128"
+                      name="country" />
+                  </externalMetadataColumns>
                 </output>
                 <output
                   refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      name="NombreCliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      name="idfacturacion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      name="idcliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[country]"
+                      dataType="wstr"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[country]"
+                      name="country" />
                     <outputColumn
                       refId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -139,7 +720,18 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+cliente.codigo_cliente,
+CONCAT(cliente.nombres, '', cliente.apellidos) NombreCliente, 
+cliente.idtipocliente,
+tipo_clientes.nombre_tipo,
+facturacion.idfacturacion, 
+facturacion.idcliente, 
+facturacion.monto_facturacion,
+DB_NAME() country
+FROM facturacion
+INNER JOIN cliente ON facturacion.idcliente = cliente.idcliente 
+INNER JOIN tipo_clientes ON cliente.idtipocliente = tipo_clientes.idtipocliente</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -156,7 +748,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">2</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -165,6 +757,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\db_guatemala.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_guatemala1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_guatemala1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -172,14 +766,188 @@
                 <output
                   refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      name="codigo_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      name="NombreCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      name="idtipocliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      name="nombre_tipo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      name="idfacturacion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      name="idcliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      name="NombreCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      dataType="i4"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="nombre_tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      dataType="i4"
+                      name="idfacturacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      dataType="i4"
+                      name="idcliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      dataType="numeric"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="128"
+                      name="country" />
+                  </externalMetadataColumns>
                 </output>
                 <output
                   refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      name="NombreCliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      name="idfacturacion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      name="idcliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[country]"
+                      dataType="wstr"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[country]"
+                      name="country" />
                     <outputColumn
                       refId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -222,7 +990,18 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+cliente.codigo_cliente,
+CONCAT(cliente.nombres, '', cliente.apellidos) NombreCliente, 
+cliente.idtipocliente,
+tipo_clientes.nombre_tipo,
+facturacion.idfacturacion, 
+facturacion.idcliente, 
+facturacion.monto_facturacion,
+DB_NAME() country
+FROM facturacion
+INNER JOIN cliente ON facturacion.idcliente = cliente.idcliente 
+INNER JOIN tipo_clientes ON cliente.idtipocliente = tipo_clientes.idtipocliente</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -239,7 +1018,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">2</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -248,6 +1027,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\db_honduras.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_honduras1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-FJ1855I0\SQL2022DW.db_roaming_honduras1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -255,14 +1036,188 @@
                 <output
                   refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
+                      name="codigo_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[NombreCliente]"
+                      name="NombreCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idtipocliente]"
+                      name="idtipocliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[nombre_tipo]"
+                      name="nombre_tipo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idfacturacion]"
+                      name="idfacturacion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idcliente]"
+                      name="idcliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      name="NombreCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idtipocliente]"
+                      dataType="i4"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="nombre_tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idfacturacion]"
+                      dataType="i4"
+                      name="idfacturacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[idcliente]"
+                      dataType="i4"
+                      name="idcliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
+                      dataType="numeric"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="128"
+                      name="country" />
+                  </externalMetadataColumns>
                 </output>
                 <output
                   refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[NombreCliente]"
+                      name="NombreCliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idfacturacion]"
+                      name="idfacturacion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[idcliente]"
+                      name="idcliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[country]"
+                      dataType="wstr"
+                      length="128"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[country]"
+                      name="country" />
                     <outputColumn
                       refId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -280,7 +1235,932 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="128"
+                      cachedName="country"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[nombre_tipo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Pais]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Pais]"
+                      name="Pais"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]} == "db_roaming_costarica" ? "Costa Rica" : #{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]} == "db_roaming_guatemala" ? "Guatemala" : #{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]} == "db_roaming_honduras" ? "Honduras" : "***"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">country == "db_roaming_costarica" ? "Costa Rica" : country == "db_roaming_guatemala" ? "Guatemala" : country == "db_roaming_honduras" ? "Honduras" : "***"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[MontoFacturacion]"
+                      name="MontoFacturacion"
+                      precision="18"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_NUMERIC,18,2)#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_NUMERIC,18,2)monto_facturacion</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[TipoCliente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[TipoCliente]"
+                      name="TipoCliente"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[TRIM](#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">TRIM(nombre_tipo)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\FacturacionPais"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="FacturacionPais"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\FacturacionPais.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].Columns[Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Pais"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Nombre País]"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[Pais]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].Columns[TotalVentas]"
+                      cachedDataType="ui8"
+                      cachedName="TotalVentas"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Total de Ventas]"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[TotalVentas]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].Columns[MontoFacturacion]"
+                      cachedDataType="numeric"
+                      cachedName="MontoFacturacion"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Monto de Facturación]"
+                      lineageId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1].Columns[MontoFacturacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Nombre País]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nombre País" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Total de Ventas]"
+                      dataType="wstr"
+                      length="255"
+                      name="Total de Ventas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input].ExternalColumns[Monto de Facturación]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto de Facturación" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\FacturacionPais.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FacturacionPais.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\FacturacionPais.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FacturacionPais.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\FacturacionTipoCliente"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="FacturacionTipoCliente"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\FacturacionTipoCliente.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].Columns[TipoCliente]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="TipoCliente"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Tipo de Cliente]"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TipoCliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].Columns[TotalVentas]"
+                      cachedDataType="ui8"
+                      cachedName="TotalVentas"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Total de Ventas]"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[TotalVentas]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].Columns[MontoFacturacion]"
+                      cachedDataType="numeric"
+                      cachedName="MontoFacturacion"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Monto de Facturación]"
+                      lineageId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1].Columns[MontoFacturacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Tipo de Cliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo de Cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Total de Ventas]"
+                      dataType="wstr"
+                      length="255"
+                      name="Total de Ventas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input].ExternalColumns[Monto de Facturación]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto de Facturación" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\FacturacionTipoCliente.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FacturacionTipoCliente.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\FacturacionTipoCliente.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FacturacionTipoCliente.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[codigo_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[NombreCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="501"
+                      cachedName="NombreCliente"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[NombreCliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[NombreCliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idtipocliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[nombre_tipo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[nombre_tipo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[idfacturacion]"
+                      cachedDataType="i4"
+                      cachedName="idfacturacion"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idfacturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[idcliente]"
+                      cachedDataType="i4"
+                      cachedName="idcliente"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[idcliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idcliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[monto_facturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="128"
+                      cachedName="country"
+                      lineageId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output].Columns[country]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[codigo_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[NombreCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="501"
+                      cachedName="NombreCliente"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[NombreCliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[NombreCliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idtipocliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[nombre_tipo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[nombre_tipo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[idfacturacion]"
+                      cachedDataType="i4"
+                      cachedName="idfacturacion"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idfacturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[idcliente]"
+                      cachedDataType="i4"
+                      cachedName="idcliente"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[idcliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idcliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[monto_facturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="128"
+                      cachedName="country"
+                      lineageId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output].Columns[country]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[codigo_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[NombreCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="501"
+                      cachedName="NombreCliente"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[NombreCliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[NombreCliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idtipocliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[nombre_tipo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[nombre_tipo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[idfacturacion]"
+                      cachedDataType="i4"
+                      cachedName="idfacturacion"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idfacturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[idcliente]"
+                      cachedDataType="i4"
+                      cachedName="idcliente"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[idcliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idcliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[monto_facturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="128"
+                      cachedName="country"
+                      lineageId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output].Columns[country]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[NombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="501"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[NombreCliente]"
+                      name="NombreCliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idfacturacion]"
+                      name="idfacturacion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idcliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idcliente]"
+                      name="idcliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]"
+                      dataType="wstr"
+                      length="128"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[country]"
+                      name="country" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Aggregate Output 1]"
+              endId="Package\Data Flow Task\FacturacionPais.Inputs[Excel Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\Data Flow Task\Consolidado 1.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Aggregate Output 11]"
+              endId="Package\Data Flow Task\FacturacionTipoCliente.Inputs[Excel Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\Data Flow Task\Consolidado 2.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task\Consolidado 1.Inputs[Aggregate Input 1]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task\Consolidado 2.Inputs[Aggregate Input 1]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\db_costarica.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\db_guatemala.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output2]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\db_honduras.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Union All Output 1]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Data Flow Task\Union All.Outputs[Union All Output 1]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -308,28 +2188,352 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="137.6,41.6"
-          Id="Package\Data Flow Task\db_costarica"
-          TopLeft="49.999999254942,64.9999990314246" />
-        <NodeLayout
-          Size="145.6,41.6"
-          Id="Package\Data Flow Task\db_guatemala"
-          TopLeft="213.999996811152,64.9999990314246" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="140,41.6"
           Id="Package\Data Flow Task\db_honduras"
-          TopLeft="382.999994292855,66.9999990016222" />
+          TopLeft="385.142851440274,27.2352931541246" />
+        <NodeLayout
+          Size="145.6,41.6"
+          Id="Package\Data Flow Task\db_guatemala"
+          TopLeft="213.285711095346,25.235293183927" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Data Flow Task\db_costarica"
+          TopLeft="47.8571421075233,25.9999990656096" />
         <AnnotationLayout
           Text=""
           ParentId="Package\Data Flow Task"
           FontInfo="{assembly:Null}"
-          Size="28.8,60"
+          Size="28.8,40"
           Id="3f32fece-5002-45b2-933a-c1ab9b32c272"
           TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Data Flow Task\Union All"
+          TopLeft="227.142857626385,114.705882252397" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="116.657142107523,67.5999990656096">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="142.485715518861,47.1058831867874"
+              Start="0,0"
+              End="142.485715518861,39.6058831867874">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7212281652961" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.7212281652961"
+                    Point2="0,30.7212281652961"
+                    Point3="4,30.7212281652961" />
+                  <mssgle:LineSegment
+                    End="138.485715518861,30.7212281652961" />
+                  <mssgle:CubicBezierSegment
+                    Point1="138.485715518861,30.7212281652961"
+                    Point2="142.485715518861,30.7212281652961"
+                    Point3="142.485715518861,34.7212281652961" />
+                  <mssgle:LineSegment
+                    End="142.485715518861,39.6058831867874" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="286.614284360865,66.835293183927">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.87058906847"
+              Start="0,0"
+              End="0,40.37058906847">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.37058906847" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output2]"
+          TopLeft="455.142851440274,68.8352931541246">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-139.999993813889,45.8705890982724"
+              Start="0,0"
+              End="-139.999993813889,38.3705890982724">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9156015858299" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9156015858299"
+                    Point2="0,29.9156015858299"
+                    Point3="-4,29.9156015858299" />
+                  <mssgle:LineSegment
+                    End="-135.999993813889,29.9156015858299" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-135.999993813889,29.9156015858299"
+                    Point2="-139.999993813889,29.9156015858299"
+                    Point3="-139.999993813889,33.9156015858299" />
+                  <mssgle:LineSegment
+                    End="-139.999993813889,38.3705890982724" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="213.571429026066,186.588235130566" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Union All Output 1]"
+          TopLeft="288.557143326225,156.305882252397">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.2823528781688"
+              Start="0,0"
+              End="0,22.7823528781688">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.7823528781688" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="229.285714773803,250.823529191908" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="289.628571899935,228.188235130566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.6352940613424"
+              Start="0,0"
+              End="0,15.1352940613424">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.1352940613424" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\Data Flow Task\Consolidado 1"
+          TopLeft="24.2857143374122,191.176470420662" />
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\Data Flow Task\Consolidado 2"
+          TopLeft="425.71428662052,190.411764538979" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 1]"
+          TopLeft="229.285714773803,271.623529191908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-61.0000004363912,-59.6470587712465"
+              Start="0,0"
+              End="-53.5000004363912,-59.6470587712465">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-26.5000002181956,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-26.5000002181956,0"
+                    Point2="-30.5000002181956,0"
+                    Point3="-30.5000002181956,-4" />
+                  <mssgle:LineSegment
+                    End="-30.5000002181956,-55.6470587712465" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-30.5000002181956,-55.6470587712465"
+                    Point2="-30.5000002181956,-59.6470587712465"
+                    Point3="-34.5000002181956,-59.6470587712465" />
+                  <mssgle:LineSegment
+                    End="-53.5000004363912,-59.6470587712465" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 2]"
+          TopLeft="349.285714773803,271.623529191908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.4285718467164,-60.4117646529292"
+              Start="0,0"
+              End="68.9285718467164,-60.4117646529292">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="34.2142859233582,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.2142859233582,0"
+                    Point2="38.2142859233582,0"
+                    Point3="38.2142859233582,-4" />
+                  <mssgle:LineSegment
+                    End="38.2142859233582,-56.4117646529292" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.2142859233582,-56.4117646529292"
+                    Point2="38.2142859233582,-60.4117646529292"
+                    Point3="42.2142859233582,-60.4117646529292" />
+                  <mssgle:LineSegment
+                    End="68.9285718467164,-60.4117646529292" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Data Flow Task\FacturacionPais"
+          TopLeft="15.0000000319311,278.352940932483" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\Data Flow Task\FacturacionTipoCliente"
+          TopLeft="411.428572304395,282.176470340897" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
+          TopLeft="93.4428571846716,232.776470420662">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.5764705118217"
+              Start="0,0"
+              End="0,38.0764705118217">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.0764705118217" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Aggregate Output 11]"
+          TopLeft="500.771429462457,232.011764538979">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.1647058019177"
+              Start="0,0"
+              End="0,42.6647058019177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.6647058019177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\db_honduras">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\db_guatemala">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\db_costarica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\FacturacionPais">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\FacturacionTipoCliente">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
